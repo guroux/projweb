@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% block stylesheets %}
+        <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('bootstrap/css/small-business.css') }}" rel="stylesheet">
+    {% endblock %}
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="article">
+                            Consulter les articles
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive img-rounded" src="https://storage.googleapis.com/idx-acnt-gs.ihouseprd.com/AR451951/file_manager/140234914.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <h1>Présentation</h1>
+                <p>Bienvenu sur le blog Yassine Triki/Guillaume Roux</p>
+                <a class="btn btn-primary btn-lg" href="{{ path('article_new') }}">Créer un article</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="well text-center">
+                    Bienvenu sur le blog Yassine Triki/Guillaume Roux
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Triki/Roux</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

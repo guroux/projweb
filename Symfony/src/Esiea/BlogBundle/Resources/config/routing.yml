@@ -1,0 +1,7 @@
+esiea_blog_homepage:
+    path:     /home
+    defaults: { _controller: EsieaBlogBundle:Article:home }
+
+esiea_blog_article:
+    resource: "@EsieaBlogBundle/Resources/config/routing/article.yml"
+    prefix:     /article
